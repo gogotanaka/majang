@@ -1,0 +1,24 @@
+<div class="home">
+  <div class="inside clearfix">
+    <div class="left_box">
+      <ul>
+        <li class="name">
+          <% if current_user.first_name.present? && current_user.last_name.present? %>
+            <%= current_user.last_name %> <%= current_user.first_name %>
+          <% else %>
+            You
+          <% end %>
+        </li>
+        <li class="info">
+         <%= link_to '本を売る', new_product_path %>
+        </li>
+        <li class="gpa">
+          
+        </li>
+      </ul>
+    </div>
+    <div class="right_box">
+
+    </div>
+  </div>
+</div>

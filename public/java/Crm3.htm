@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+	<title>Ì¾¾ÎÌ¤ÀßÄê</title>
+
+
+
+<script type="text/javascript" >
+
+
+
+function go(){
+
+
+
+
+
+M1=document.kake.M1.value;
+
+M2=document.kake.M2.value;
+
+M3=document.kake.M3.value;
+
+M4=document.kake.M4.value;
+
+M5=document.kake.M5.value;
+
+
+
+
+
+a=(M1*1+M2*1+M3*1+M4*1+M5*1);
+
+kekka=(M3*(M3-1)+2*(M1*M2+M2*M4+M4*M5))/a
+
+
+
+
+
+document.kake.a.value=a;
+
+document.kake.kekka.value=kekka;
+
+
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+
+
+<form name="kake">
+
+<p>n(m1[NS])=<input name=M1></p>
+
+<p>n(m2[NS])=<input name=M2></p>
+
+<p>n(m3[NS])=<input name=M3></p>
+
+<p>n(m4[NS])=<input name=M4></p>
+
+<p>n(m5[NS])=<input name=M5></p>
+
+    <p><input type="button" onclick="go()" value="·×»»³«»Ï!"></p>
+
+<p>n(Cr<m1>[NS])=<input name=a></p>
+
+<p>n(CrII<m1>[NS])=<input name=kekka></p>
+
+</form>
+
+</body>
+
+</html>
+

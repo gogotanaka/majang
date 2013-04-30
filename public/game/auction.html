@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>マージャン学部!</title>
+<meta name="keywords" content="ルール,やり方,役,検定,麻雀,マージャン,数学,麻雀学部" />
+<meta name="description" content="ここでは初心者が麻雀の達人に成る情報をどんどん紹介して行きます。
+  
+  　　　他にも多くの雑学や数学的に解明した情報もあり。
+  
+  　　　麻雀検定では最高位を取れば名前入りの賞状を差し上げます。" />
+<meta name="robots" content="INDEX,FOLLOW" />
+
+<title>オークションでGO,GO! var 1.00</title>
+</style>
+<script type="text/javascript"><!--
+function gogo() {
+  ki = 5;
+}
+
+function syoubu(naniyo) {
+ 
+  if(naniyo == 1) {
+  var kakaku=Number(document.test.kakaku.value);
+    var userName; 
+    nyusat = prompt("いくらで入札するの？(半角英数で)", ""); 
+	    if(userName != "") {
+      nyusatu = Number(nyusat);
+      if(kakaku < nyusatu) {
+        pulasu = nyusatu - kakaku;
+        alert(pulasu + "円プラスの" + nyusatu + "円で入札！");
+        document.test.kakaku.value= nyusatu;
+        if(pulasu >= 50000) {
+          ki = ki - 5;
+        }
+        else if(pulasu >= 17000) {
+          ki = ki - 2;
+        }
+        else if(pulasu >= 8000) {
+          ki = ki - 1;
+        }
+        else if(pulasu >= 1000) {
+          ki = ki - 0;
+        }
+        else {
+          ki = ki + 1;
+        }
+		
+  document.test.nyusa.value = nyusatu;
+  	
+      }
+      else if(document.test.kakaku.value > nyusatu) {
+        alert("少なくとも現在価格よりは高く入札しよう");
+      }
+      else {
+      alert("正確に半角英数で入力しよう！");
+      }
+    }
+    else {
+    alert("入札金額を入力してください！");
+    }
+		 if( ki <= 0 && pulasu >= 10000) {
+      kome = "落札！！！！！";
+      if(document.test.kakaku.value <= 80000) {
+        kome2 = "更に80000円以下なのでパスワードケ゛ット！　　「F」"
+      }
+      else {
+        kome2="でも、、80000円以上なのでパスワードはなし"
+      }
+      document.write(kome + "\n" + kome2)
+    }
+ }  
+
+  if(naniyo == 2) {
+    kouge = Math.floor( Math.random() * 2 + 1 );
+    switch(kouge) {
+      case 1:
+        yusa = "IDをもう一個作って人数が増えたように見せた";
+        yusa2 = "敵はかなり動揺した";
+        ki = ki - 1;
+        break;
+      default:
+        yusa = "メールをおくって動揺を誘った";
+        yusa2 = "が強気になった";
+        ki = ki + 1;
+        break;
+    }
+    alert(yusa);
+    alert(yusa2);
+  }
+var kiii;
+  if(ki >= 5) {
+   document.test.kiii.value = "強気";
+  }
+  else if(ki == 4) {
+    document.test.kiii.value= "やや強気";
+  }
+  else if(ki == 3) {
+    document.test.kiii.value = "中気";
+  }
+  else if(ki == 2) {
+    document.test.kiii.value= "やや弱気";
+  }
+  else if(ki == 1) {
+    document.test.kiii.value="弱気";
+  }
+  else if(ki <= 0) {
+  document.test.kiii.value="無気力";
+  }
+
+  switch(ki) {
+    case 1:
+      teki = 500;
+      break;
+    case 2:
+      teki = 1000;
+      break;
+    case 3:
+      teki = 2000;
+      break;
+    case 4:
+      teki = 4000;
+      break;
+    case 5:
+      teki = 8000;
+      break;
+	case 6:
+      teki = 8000;
+      break;
+    default:
+      teki = 500;
+      break;
+  }
+  teki2 = Number(document.test.kakaku.value) + teki;
+  alert("敵は" + teki + "円上乗せの" + "\n" + teki2 + "円で入札");
+  document.test.kakaku.value = teki2;
+
+  document.test.nyusa1.value = teki2;
+}
+//--></script>
+</head>
+<body onLoad="gogo();">
+<p><font color="red" face="ＭＳ Ｐゴシック"><span style="font-size:36pt;">オークションでGO,GO!</span></font><span class="version" style="font-size:10pt;">var 1.00</span></p>
+<p>さーて、Ａ君はネットオークションをやる事にした！</p>
+<p>君はA君になりきってパソコンを安く買おう！(パソコンいらない人もやってよ！</p>
+<p><strong>8万円以下で買えるとパスワード3つ目ケ゛ット！</strong></p>
+
+<p><i>・実際のネットオークションとは全然違うので注意。</i></p>
+<p><i>・後なんか「スクリプトが～～」みたいの出るけど普通に許可で</i></p>
+<form name="test">
+<dl id="nowprice">
+<dt>パソコンの現在価格</dt>
+        <dt><input readonly size="7" name="kakaku" value="100" class="field">円</dl>
+<table border="1">
+<thead>
+<tr><th id="you">自分</th><th id="other">相手</th></tr>
+</thead>
+<tbody>
+<tr>
+<td height="22">今の最高入札価格は
+<input readonly size="6" name="nyusa" value="0" class="field">
+円</td>
+<td height="22">今の最高入札価格は
+<input readonly size="5" name="nyusa1" value="0" class="field">
+円</td>
+</tr>
+<tr>
+<td colspan="2">
+相手は
+<input readonly size="7" name="kiii" value="強気" class="field">
+だよ。
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<input onClick="syoubu(1)" type="button" value="入札">
+<input onClick="syoubu(2)" type="button" value="ゆさぶる">
+</p>
+</form>
+
+<p>var 1.00 公開</p>
+<p><a href="http://www.ma-zya.com/z-goraku.htm">マージャン学部娯楽室へ</a></p>
+</body>
+</html>

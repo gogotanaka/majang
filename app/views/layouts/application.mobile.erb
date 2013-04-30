@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_title or "OpenCollege" %></title>
+    <meta name="description" content="<%= @meta_description %>">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38459360-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </head>
+  <body class="m_<%= controller.controller_name %>">
+    <header class="m_main_header">
+      <div class="clearfix">
+        <% if signed_in? %>
+          <% if controller.controller_name == "guides" %>
+            <%= link_to "OpenCollege", root_path, class: "m_logo" %>
+          <% else %>
+            <div class="m_autocomplete">
+              <%= form_tag class_room_for_years_path, method: :get do %>
+                <%= text_field_tag :search, params[:search], placeholder: "Search", class: "m_autocomplete_form" %>
+              <% end %>
+              <div class="m_search_icon">
+                <%= image_tag "search_icon.png", width: "20px" %>
+              </div>
+            </div>
+          <% end %>
+        <% else %>
+          <%= link_to "OpenCollege", root_path, class: "m_logo" %>
+          <%= link_to "ログイン", signin_path, class: "m_btn m_header_signin" %>
+          <%= link_to "登録", signup_path, class: "m_btn_primary m_header_signup" %>
+        <% end %>
+      </div>
+    </header>
+    <div class="m_main_container">
+      <%= yield %>
+      <% if signed_in? %>
+        <% unless controller.controller_name == "guides" %>
+          <ul class="m_user_menu">
+            <li>
+              <% if controller.controller_name == "users" && controller.action_name == "show" %>
+                <%= link_to "ホーム", user_path(current_user), class: "selected" %>
+              <% else %>
+                <%= link_to "ホーム", user_path(current_user) %>
+              <% end %>
+            </li>
+            <li>
+              <% if controller.controller_name == "users" && controller.action_name == "recommend" %>
+                <%= link_to "おすすめ", recommend_user_path(current_user), class: "selected" %>
+              <% else %>
+                <%= link_to "おすすめ", recommend_user_path(current_user) %>
+              <% end %>
+            </li>
+            <li>
+              <% if controller.controller_name == "users" && controller.action_name == "rank" %>
+                <%= link_to "順位", rank_user_path(current_user), class: "selected" %>
+              <% else %>
+                <%= link_to "順位", rank_user_path(current_user) %>
+              <% end %>
+            </li>
+            <li>
+              <% if controller.controller_name == "users" && controller.action_name == "edit" %>
+                <%= link_to "設定", edit_user_path(current_user), class: "selected" %>
+              <% else %>
+                <%= link_to "設定", edit_user_path(current_user) %>
+              <% end %>     
+            </li>
+          </ul>
+        <% end %>
+      <% end %>
+    </div>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=477665045629039";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </body>
+</html>

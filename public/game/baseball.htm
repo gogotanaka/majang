@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>マージャン学部!</title>
+<meta name="keywords" content="ルール,やり方,役,検定,麻雀,マージャン,数学,麻雀学部" />
+<meta name="description" content="ここでは初心者が麻雀の達人に成る情報をどんどん紹介して行きます。
+  
+  　　　他にも多くの雑学や数学的に解明した情報もあり。
+  
+  　　　麻雀検定では最高位を取れば名前入りの賞状を差し上げます。" />
+<meta name="robots" content="INDEX,FOLLOW" />
+	<title>名称未設定</title>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<font face="ＭＳ Ｐ明朝">&nbsp;</font><span style="font-size:36pt;"><b><font face="ＭＳ ゴシック" color="red">野球でGO,GO! 
+&nbsp;&nbsp;</font></b></span>Var 1.01 &nbsp;&nbsp;&nbsp;ハッピーエンド…3　　　バッドエンド…３<form name="test">
+    <p>さて、あなたはピッチャー</p>
+    <p>満塁です、ツーアウトです、フルカウントです、一点差で自分のチームが勝ってます、9回の裏です、かなりドラマっぽいです。</p>
+    <p>さぁどんな球を投げる！！？＊右バッター、右ピッチャーです</p>
+    
+<form>	
+	<p><select name="basyo" size="1">
+
+<option value="1">真ん中</option>
+
+<option value="2">外角</option>
+
+<option value="3">内角</option>
+
+
+</select>
+    に<select name="syurui" size="1">
+
+<option value="1">ストレート</option>
+
+<option value="2">スライダー</option>
+
+<option value="3">シュート</option>
+
+<option value="4">フォーク</option>
+</select>
+
+
+
+
+
+    を<select name="tuyosa" size="1">
+
+<option value="1">強め</option>
+
+<option value="2">普通</option>
+
+<option value="3">弱め</option>
+
+</select>
+
+
+    に投げる</p>
+    <p>&nbsp;</p>
+
+<input type=button value="おらぁ！！投球！" onClick=diet()>
+</form>
+<SCRIPT language="JavaScript">
+
+<!--
+
+function diet(){
+basyo = document.test.basyo.value;
+syurui = document.test.syurui.value;
+tuyosa = document.test.tuyosa.value;
+
+
+if(basyo==3&& syurui==3)document.write( "内角からのシュート…デッドボール…押し出し…");
+
+else if(basyo=="1"&& syurui=="1"&&tuyosa=="1" ) alert( "パシ！痛快のストレート！試合終了！");
+
+else if(basyo=="2"&& syurui=="2" ) document.write( "外角からのスライダー…ボール…押し出し…");
+
+else if(basyo=="1"&& syurui=="1"&&tuyosa=="3" ) alert( "まさかのスローボールに勝利！")
+
+else if(basyo=="3"&&(syurui=="1" || syurui=="4")) alert( "内角につまりアウト！！勝利！！");
+
+else  document.write( "玉はスタンドに消えていった。");
+
+
+}//-->
+
+</SCRIPT>
+</form>
+<p><a href="http://www.ma-zya.com/z-goraku.htm">マージャン学部娯楽室へ</a></p>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+
+	<title>名称未設定</title>
+
+
+
+<script type="text/javascript" >
+
+
+
+function go(){
+
+
+
+
+
+M1=document.kake.M1.value;
+
+M2=document.kake.M2.value;
+
+M3=document.kake.M3.value;
+
+
+
+
+
+a=(M1*1+M2*1+M3*1);
+
+
+
+kekka=(M1*(M1-1)+2*M2*M3)/a;
+
+
+
+document.kake.a.value=a;
+
+document.kake.kekka.value=kekka;
+
+
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+
+
+<form name="kake">
+
+<p>n(m1[NS])=<input name=M1></p>
+
+<p>n(m1[NS])=<input name=M2></p>
+
+<p>n(m1[NS])=<input name=M3></p>
+
+    <p><input type="button" onclick="go()" value="計算開始!"></p>
+
+<p>n(Cr<m1>[NS])=<input name=a></p>
+
+<p>n(CrII<m1>[NS])=<input name=kekka></p>
+
+</form>
+
+</body>
+
+</html>
+

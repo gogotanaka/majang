@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>マージャン学部!</title>
+<meta name="keywords" content="ルール,やり方,役,検定,麻雀,マージャン,数学,麻雀学部" />
+<meta name="description" content="ここでは初心者が麻雀の達人に成る情報をどんどん紹介して行きます。
+  
+  　　　他にも多くの雑学や数学的に解明した情報もあり。
+  
+  　　　麻雀検定では最高位を取れば名前入りの賞状を差し上げます。" />
+<meta name="robots" content="INDEX,FOLLOW" />
+	<title>名称未設定</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<script type="text/javascript">
+
+function syoubu(zibun){
+aite=Math.floor( Math.random() * 6+1);
+if(aite==1){
+var mese2="相手はパンチをしてきたっ"
+}
+if(aite==2){
+var mese2="相手はキックをしてきたー"
+}
+if(aite==3){
+var mese2="相手は仲間を呼んだ！"
+document.test.nakama.value=Number(document.test.nakama.value)+20;
+}
+if(aite==4){
+var mese2="相手にバーカっていわれたー"
+}
+if(aite==5){
+var mese2="相手は動かなかった"
+}
+if(aite==6){
+var mese2="相手は一斉攻撃してきた！"
+var damezi2=Number(document.test.nakama.value)-Number(document.test.nakama2.value)
+var damezi=0;
+document.test.nakama2.value=Number(document.test.nakama2.value)-Number(document.test.nakama2.value)
+document.test.nakama.value=Number(document.test.nakama.value)-Number(document.test.nakama.value)
+}
+if(zibun==1){
+mese1="コンシンのパンチ！"
+   if(aite==1){
+   mese3="パンチ力は向こうの方が上；30のダメージ;"
+   var damezi2=30;
+   var damezi=0;
+   
+   }
+   else if(aite==4){
+   mese3="暴言にひるんでカウンター；40のダメージ;"　
+   var damezi2=40;
+   var damezi=0;
+   }
+   else if(aite==6){
+   mese3="敵の一斉攻撃"　
+   }
+   else{
+   mese3="攻撃をよけ見事パンチが決まった！20のダメージを与えた！イェーィｗ"
+   var damezi=20;
+   var damezi2=0;
+   }
+}
+if(zibun==2){
+mese1="食らえっニーキックッ！"
+   if(aite==2){
+   mese3="キック力は向こうの方が上；20のダメージ;"
+   var damezi2=30;
+   var damezi=0;
+   
+   }
+   else if(aite==5){
+   mese3="キックをかわされカウンター！50のダメージ;"　
+   var damezi2=50;
+   var damezi=0;
+   }
+   else if(aite==6){
+   mese3="敵の一斉攻激"
+   }
+   else{
+   mese3="攻撃をよけ見事キックが決まった！20のダメージを与えた！イェーィｗ"
+   var damezi=20;
+   var damezi2=0;
+   }
+}
+if(zibun==3){
+mese1="電話をかけた"
+document.test.nakama2.value=Number(document.test.nakama2.value)+10;
+　 if(aite==1||aite==2){
+   mese3="電話を中に攻撃をくらった；"+"\n"+"しかし！仲間を呼ぶことに成功。"
+   var damezi2=20;
+   var damezi=0;
+   }
+   else if(aite==6){
+   mese3="敵の一斉攻撃"
+   }
+   else{
+   mese3="仲間を呼ぶことに成功。"
+   var damezi2=0;
+   var damezi=0;
+}
+}
+if(zibun==4){
+mese1="動かない"
+   if(aite==1||aite==2){
+   mese3="普通に攻撃を食らう,痛い"
+   var damezi2=30;
+   var damezi=0;
+   }
+   else if(aite==6){
+   mese3="敵の一斉攻撃を見切った"
+   damezi2=damezi2-50;
+   }
+   else {
+   mese3="何事もなかった"　
+   var damezi=0;
+   var damezi2=0;
+   }
+}
+if(zibun==5){
+mese1="仲間を0にして相手の仲間の差だけアタック！"+"\n"+"(遊戯王っぽい。"
+mese3="敵に大ダメージを与えたｗ"
+var damezi=Number(document.test.nakama2.value)-Number(document.test.nakama.value)
+var damezi2=0;
+document.test.nakama2.value=Number(document.test.nakama2.value)-Number(document.test.nakama2.value)
+document.test.nakama.value=Number(document.test.nakama.value)-Number(document.test.nakama.value)
+}
+if(zibun==6){
+mese1="仲間を0にして仲間の分体力回復."+"\n"+"(デュエマスっぽい。"
+mese3="元気になったｗ"
+var damezi=0;
+var damezi2=-Number(document.test.nakama2.value);
+document.test.nakama2.value=Number(document.test.nakama2.value)-Number(document.test.nakama2.value)
+}
+if(zibun==7){
+mese1="逃げるさぁ、、どうでるか、、"
+   if(aite==1||aite==2||aite==3||aite==4||aite==5){
+   nige=Math.floor( Math.random() * 2+1);
+      if(nige==1){
+      mese3="成功！一度ご飯を食べ体力40回復"
+      var damezi=0;
+　    var damezi2=-30;
+      }
+      else if(nige==2){
+      mese3="失敗！大リンチに50ダメージ"
+      var damezi=0;
+　    var damezi2=50;
+      }
+   }
+   else if(aite==6){
+   mese3="敵の一斉攻撃"
+   }
+}
+
+alert(mese1+"\n"+"\n"+mese2);
+alert(mese3);
+document.test.tairyoku.value=Number(document.test.tairyoku.value)-damezi; 
+document.test.tairyoku2.value=Number(document.test.tairyoku2.value)-damezi2; 
+
+if(Number(document.test.tairyoku.value)<=1){
+document.write("勝利！パスワード2つ目は『I』")
+}
+if(Number(document.test.tairyoku2.value)<=1){
+document.write("終わり。")
+}
+}
+  
+</script>
+<SPAN style="FONT-SIZE: 36pt"><B><FONT face="ＭＳ ゴシック" color=red>ケンカでGO,GO!!! 
+</FONT></B></SPAN>Var 1.20　　　
+    戦術を持ってすれば絶対勝てるはず！<p>いきなりだが隣町のＸ中学とケンカになった。</p>
+<form name="test">
+
+    <p>さぁ相手の体力を０にしよう！</p>
+相手の体力は<INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=tairyoku value=200>です。 &nbsp;敵の仲間の数は<INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=nakama value=0>人かな、、<P style>
+<INPUT onclick=syoubu(1) type=button value=パンチ>
+<INPUT onclick=syoubu(2) type=button value=キック>
+<INPUT onclick=syoubu(4) type=button value=待機>
+
+<INPUT onclick=syoubu(3) type=button value=電話>
+<INPUT onclick=syoubu(5) type=button value=一斉攻撃> 
+<INPUT onclick=syoubu(6) type=button value=仲間を盾に>
+<INPUT onclick=syoubu(7) type=button value=逃げる！></P>
+    <p>自分の体力は<INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=tairyoku2 value=200 >だよ。　自分の仲間の数は<INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=nakama2 value=0>人っぽい</p>
+</form>
+<table style="line-height:150%;" border="1" cellspacing="0" width="425">
+    <tr>
+        <td width="88" height="25">
+            <p style="line-height:150%;"><b><font face="ＭＳ Ｐ明朝" color="#00CCCC">パンチ</font></b></p>
+        </td>
+        <td width="327" height="25">
+            <p style="line-height:150%;">パンチする</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="88" height="28">
+            <p style="line-height:150%;"><font face="ＭＳ Ｐ明朝" color="#00CCCC"><b>キック</b></font></p>
+        </td>
+        <td width="327" height="28">
+            <p style="line-height:150%;">キックする</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="88">
+            <p style="line-height:150%;"><font face="ＭＳ Ｐ明朝" color="#00CCCC"><b>待機</b></font></p>
+        </td>
+        <td width="327">
+            <p style="line-height:150%;">動かない、敵の一斉攻撃をよける事が出来る。</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="88">
+            <p style="line-height:150%;"><font face="ＭＳ Ｐ明朝" color="#00CCCC"><b>電話</b></font></p>
+        </td>
+        <td width="327">
+            <p style="line-height:150%;">仲間を呼ぶ</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="88">
+            <p style="line-height:150%;"><font face="ＭＳ Ｐ明朝" color="#00CCCC"><b>一斉攻撃</b></font></p>
+        </td>
+        <td width="327">
+            <p style="line-height:150%;">仲間を0にして相手の仲間の差だけアタック！</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="88" height="22">
+            <p style="line-height:150%;"><font face="ＭＳ Ｐ明朝" color="#00CCCC"><b>仲間を盾に</b></font></p>
+        </td>
+        <td width="327" height="22">
+            <p style="line-height:150%;">仲間を0仲間の人数ぶん体力回復。</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="88" height="22">
+            <p style="line-height:150%;"><font face="ＭＳ Ｐ明朝" color="#00CCCC"><b>逃げる！</b></font></p>
+        </td>
+        <td width="327" height="22">
+            <p style="line-height:150%;">逃げる,成功すると回復、失敗するとダメージ。</p>
+        </td>
+    </tr>
+</table>
+<p style="line-height:200%; margin-top:0; margin-bottom:0;">
+Var 1.20 　全体的な数値変更</p>
+<p style="line-height:200%; margin-top:0; margin-bottom:0;">Var 1.10　修正
+<p style="line-height:200%; margin-top:0; margin-bottom:0;">Var 1.00　公開
+<p><a href="http://www.ma-zya.com/z-goraku.htm">マージャン学部娯楽室へ</a></p>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>名称未設定</title>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<span style="font-size:36pt;"><b><font face="ＭＳ ゴシック" color="red">ハンバーガー屋経営(続)でGO,GO!! 
+</font></b></span>Var 1.00<p style="line-height:150%; margin-top:0; margin-bottom:0;">あれから数ヶ月、、</p>
+<p style="line-height:150%; margin-top:0; margin-bottom:0;">メニューのまんねりを防ぐべく、新メニューの開発が始まった！　　　　 
+    &nbsp; 
+    &nbsp;</p>
+<form name="test">
+    <p>&nbsp;</p>
+&nbsp;
+    <img src="http://www.geocities.jp/yaha1915/geme/haba2/img2.gif" align="bottom" width="216" height="259" border="0" alt="img2.gif">三人で会議した結果､何個か材料をしぼったｗさぁどんな組み合わせで発売する？    
+	<p><select name="hasamu" size="1">
+
+<option value="1">パン</option>
+
+<option value="2">クッキー的な物</option>
+
+
+</select>に<select name="h1" size="1">
+
+<option value="1">ハンバーグ</option>
+
+<option value="2">鶏肉</option>
+
+<option value="3">レタス</option>
+
+</select>と<select name="h2" size="1">
+
+<option value="1">チーズ</option>
+
+<option value="2">トマト</option>
+
+<option value="3">レタス</option>
+
+</select>をはさむ！</p>
+    <p>んで、いくらで販売する？</p>
+    <p><input type="radio" name="t" value="1" checked>400円
+<input type="radio" name="t" value="2" >300円
+<input type="radio" name="t" value="3" >248円</p>
+<p><input type=button value="販売！" onClick=diet()>
+</form>
+<SCRIPT language="JavaScript">
+
+<!--
+
+function diet(){
+obj = document.test.t
+for (i = 0; obj.length > i; i++) {
+if (obj[i].checked) {
+take=obj[i].value;
+break;
+}
+}
+h=document.test.hasamu.value;
+h1=document.test.h1.value;
+h2=document.test.h2.value;
+
+if(take==1) document.write( "高くね？") ;
+else if(h==1&&h1==1&&h2==1) document.write("どっかでみた事あるような、、") ;
+
+else if(h==2) document.write( "クッキー、、無理、、") ;
+
+else if(h2==2)  document.write( "トマトってさー苦手な人が多い；");
+
+else if(take==3) document.write( "え、、ん、、値段が中途半端、、");
+
+else if(h==1&&h1==3&&h2==3)  alert( "ダブルレタスが若者に人気！痩せるらしいよー！　　ﾊﾟｽﾜｰﾄ　ende　");
+
+else  document.write( "売れない、、、、倒産。");
+
+
+}//-->
+
+</SCRIPT></p>
+</body>
+</html>

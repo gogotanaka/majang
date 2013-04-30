@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>食べ放題でGO!GO!</title>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<FONT face="ＭＳ Ｐ明朝">&nbsp;</FONT><SPAN style="FONT-SIZE: 36pt"><B><FONT 
+face="ＭＳ ゴシック" color=red>食べ放題でGO,GO! </FONT></B></SPAN>Var 1.01 &nbsp;&nbsp;ハッピーエンド…１　バッドエンド…３<P 
+style="line-height:150%;">食べ放題、<u>決められた時間内でどれだけ満足になれるか、、</u>、</P>
+<P 
+style="line-height:150%;">浅く、深い「<font color="red">ゲーム</font>」前半にちょんこずいてカレーとか食いまくってると</P>
+<P 
+style="line-height:150%;"><u>腹がふくれ後半に美味しいものが食えん</u>などといった事態が起こる、、(経験済み</P>
+<P 
+style="line-height:150%;">さぁあなたはどーいうホーメーションで？</P><P style>&nbsp;</P>
+<form name="test">
+    <p>&nbsp;</p>
+<P style>さぁはじめは？？ <select name="s1" size="1">
+
+<option value="1">もう,何も食べない；(帰る)</option>
+
+<option value="2">ご飯系行きます！</option>
+
+<option value="3">チョイ遊びの麺類！</option>
+
+<option value="4">寿司ｗｗ</option>
+
+<option value="5">デザート系！</option>
+
+<option value="6">肉,肉,肉！</option>
+
+</select>
+
+
+    </P>
+<P style>大事な2ターン目！<select name="s2" size="1">
+
+<option value="1">もう,何も食べない；(帰る)</option>
+
+<option value="2">ご飯系行きます！</option>
+
+<option value="3">チョイ遊びの麺類！</option>
+
+<option value="4">寿司ｗｗ</option>
+
+<option value="5">デザート系！</option>
+
+<option value="6">肉,肉,肉！</option>
+
+
+</select></P>
+
+<P style>そろそろお腹が膨らんで来たかな？<select name="s3" size="1">
+<option value="1">もう,何も食べない；(帰る)</option>
+
+<option value="2">ご飯系行きます！</option>
+
+<option value="3">チョイ遊びの麺類！</option>
+
+<option value="4">寿司ｗｗ</option>
+
+<option value="5">デザート系！</option>
+
+<option value="6">肉,肉,肉！</option>
+
+
+
+
+</select></P>
+<P style>そろそろしめの4ターン目 <select name="s4" size="1">
+
+<option value="1">もう,何も食べない；(帰る)</option>
+
+<option value="2">ご飯系行きます！</option>
+
+<option value="3">チョイ遊びの麺類！</option>
+
+<option value="4">寿司ｗｗ</option>
+
+<option value="5">デザート系！</option>
+
+<option value="6">肉,肉,肉！</option>
+
+
+</select></P><input type=button value="いただきます！" onClick=diet()>
+
+</form>
+<SCRIPT language="JavaScript">
+
+<!--
+
+function diet(){
+k1 = eval(document.test.s1.value);
+k2 = eval(document.test.s2.value);
+k3 = eval(document.test.s3.value);
+k4 = eval(document.test.s4.value);
+
+var kk=k1+k2+k3+k4;
+
+if(k1==1|| k2==1)document.write( "はやばや、帰ってしまった、、、もったいない；；") ;
+
+else if (kk<9)document.write ( "チョｗ質素過ぎて元取れてないｗ");
+
+else if (kk>16)document.write ( "太った,,,,,,,,,");
+
+else if(k1==5)document.write ( "い、、行き成りデザート、、虫歯になった。");
+
+else
+   if(k4==5){
+   document.write("満足！　やったねv");
+}
+else{
+ document.write( "可もなく、不可もなく、普通に終った；");
+ }
+}
+  
+--></script>
+</html>

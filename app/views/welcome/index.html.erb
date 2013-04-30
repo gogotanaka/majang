@@ -1,0 +1,74 @@
+<div id="top_container">
+  <div class="inside">
+    <div id="slider_container" class="clearfix">
+      <div id="slider_left">
+        <h1 class="">自炊本を売ろう</h1>
+        <%= form_for(@user) do |f| %>
+          <p>自炊本を売ろう！<span>アカウント登録</span></p>
+          <div class="form_container">
+            <%= f.email_field :email, placeholder: "メールアドレス", class: "field_input mail_form"%>
+          </div>
+          <div class="form_container">
+            <div class="clearfix">
+              <div class="half_cotainer">
+                <%= f.password_field :password, placeholder: "パスワード", class: "field_input half_form" %>
+              </div>
+              <div class="half_cotainer latter">
+                <%= f.password_field :password_confirmation, placeholder: "パスワード（確認）", class: "field_input half_form" %>
+              </div>
+            </div>
+          </div>
+          <%= f.submit "アカウント登録", class: "btn_primary welcome_reg_btn" %>
+
+        <% end %>
+      </div>
+      <div id="slider_right">
+        <div id="desktop">
+          <%= image_tag 'imac.png' %>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+<div id="middle_container">
+  <div class="inside">
+    <h1>大学の授業のすべてがオープンに</h1>
+    <ul class="clearfix">
+      <li>
+        <div class="brand">
+          <%= image_tag 'welcome_ratio.png', width: "300px"%>
+        </div>
+        <h2>正確なデータ</h2>
+      </li>
+      <li>
+        <div class="rank_brand">
+          <div class="welcome_rank_container">
+            <div class="welcome_rank">100位</div>
+            <p>慶應義塾大学・10000人</p>
+          </div>
+        </div>
+        <h2>大学、学部、学科での順位がわかる</h2>
+      </li>
+      <li>
+        <div class="brand">
+          <div class="clearfix">
+            <p class="welcome_easy_recommend">ラク単</p>
+            <p class="welcome_difficult_recommend">エグ単</p>
+          </div>
+        </div>
+        <h2>おすすめの授業</h2>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="buttom_container inside">
+  <p class="copyright">&copy; 2013 Yuki Hariguchi</p>
+  <div class="welcome_share">
+    <span class="welcome_twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://open-college.herokuapp.com" data-text="まだレビューや噂で授業を選んでる？もっと客観的で正確なデータをもとに授業を選びたいよね。それがここならできるってわけ。大学の授業の新しい形、OpenCollege。" data-via="yukihariguchi" data-lang="ja">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </span>
+    <span>
+      <div class="fb-like" data-href="https://open-college.herokuapp.com" data-send="false" data-width="250" data-show-faces="false" data-layout="button_count"></div>
+    </span>
+  </div>
+</div>

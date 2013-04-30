@@ -1,0 +1,183 @@
+<HTML>
+<script type="text/javascript" >function test(){
+
+var kake1 = Math.floor( Math.random() * 5 );
+var kake2 = Math.floor( Math.random() * 2 );
+var kake3 = Math.floor( Math.random() * 10 );
+var kake4 = Math.floor( Math.random() * 20 );
+var kake5 = Math.floor( Math.random() * 3 );
+var moti=500;
+document.kake.kake1.value=kake1+6;
+document.kake.kake2.value=kake2+4;
+document.kake.kake3.value=kake3+11;
+document.kake.kake4.value=kake4+31;
+document.kake.kake5.value=kake5+1;
+document.kake.moti.value=moti;
+}
+function go(){
+obj = document.kake.t
+for (i = 0; obj.length > i; i++) {
+if (obj[i].checked) {
+hito=obj[i].value;
+break;
+}
+}
+kakekin=document.kake.kakekin.value;
+
+var arr = new Array(5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,3,3,3,4);
+syouri=arr[ Math.floor(Math.random() * arr.length) ];
+
+
+
+var chek=1;
+if(parseInt(document.kake.moti.value)<kakekin){
+alert("見栄をはっちゃいかんよ")
+chek=0
+}
+else if(kakekin<0){
+alert("少なくともプラスにしようねｗ")
+chek=0
+}
+else{
+    if(syouri==hito){
+        if(hito==1){
+    var	bairitu=document.kake.kake1.value;
+     	}
+    	else if(hito==2){
+    var	bairitu=document.kake.kake2.value;
+    	}
+        else if(hito==3){
+    var	bairitu=document.kake.kake3.value;
+	}
+        else if(hito==4){
+    var	bairitu=document.kake.kake4.value;
+    	}	
+    	else if(hito==5){
+    var	bairitu=document.kake.kake5.value;
+	    }	
+    }
+else
+{
+alert("負け");
+document.kake.moti.value=document.kake.moti.value-kakekin;
+if (document.kake.moti.value<=0){
+document.write("終わり");
+}
+}
+if(bairitu){
+var syoukin=kakekin*bairitu;
+alert(syoukin+"円ケ゛ット");
+document.kake.moti.value=syoukin+parseInt(document.kake.moti.value);
+  if(parseInt(document.kake.moti.value)>1000000){
+  document.write("A君家の金を全部ふんだっくたっ！パスワード「L」")
+}}
+else {
+
+}
+}}
+</script>
+<SPAN style="FONT-SIZE: 36pt"><B><FONT face="ＭＳ ゴシック" color=red>50M走で競人をやるでGO,GO!</FONT></B></SPAN>
+&nbsp;&nbsp;var 2.10<p>
+今日は不安と期待が混沌する50M走の計測日！</p>
+<p>自分は走り終え友と会話をしていた所、、突然A君が「今から走るあの組で競人しようぜ！」</p>
+<p>ツッコミ所は非常にあるが、、ま、、気にはじめよう！</p>
+<p>まずは↓これ押してｗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*持ち金が百万円以上行くと、、、</p>
+<form name="kake">
+    <p><input type="button" onclick="test()" value="倍率発表,所持金確認!">
+    </p>
+
+    <table border="1" cellspacing="0">
+        <tr>
+            <td width="187">
+                <p style="line-height:150%;"><b><font face="ＭＳ Ｐ明朝"><span style="font-size:14pt;">たけし君</span></font></b></p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;"><b><font face="ＭＳ Ｐ明朝"><span style="font-size:14pt;">&nbsp;よしお君</span></font></b></p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;"><b><font face="ＭＳ Ｐ明朝"><span style="font-size:14pt;">&nbsp;さだはる君</span></font></b></p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;"><b><font face="ＭＳ Ｐ明朝"><span style="font-size:14pt;">&nbsp;くにひと君</span></font></b></p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;"><b><font face="ＭＳ Ｐ明朝"><span style="font-size:14pt;">&nbsp;みつお君</span></font></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="187">
+                <p style="line-height:150%;">普通</p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;">&nbsp;ま、、早い</p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;">&nbsp;やや遅</p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;">&nbsp;遅い</p>
+            </td>
+            <td width="187">
+                <p style="line-height:150%;">&nbsp;大大本命！</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="187" height="26">    <p><INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=kake1>倍</p>
+            </td>
+            <td width="187" height="26">    <p><INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=kake2>倍 </p>
+            </td>
+            <td width="187" height="26">    <p><INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=kake3>倍</p>
+            </td>
+            <td width="187" height="26">    <p><INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=kake4>倍 </p>
+            </td>
+            <td width="187" height="26">    <p><INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="3" name=kake5>倍</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="951" height="27" colspan="5">    
+                <p style="line-height:150%;" align="center">&nbsp;<font color="red"><b><span style="font-size:14pt;">一位になると思う奴にチェックを入れて掛け金を決めよう！</span></b></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="187" height="22">    
+                <p style="line-height:150%; margin-top:0; margin-bottom:0;"><input type="radio" name="t" value="1" >たけし君            </td>
+            <td width="187" height="22">    
+                <p style="line-height:150%; margin-top:0; margin-bottom:0;"><input type="radio" name="t" value="2" >よしお君            </td>
+            <td width="187" height="22">    
+                <p style="line-height:150%; margin-top:0; margin-bottom:0;"><input type="radio" name="t" value="3" >さだはる君            </td>
+            <td width="187" height="22">    
+                <p style="line-height:150%; margin-top:0; margin-bottom:0;"><input type="radio" name="t" value="4" >くにひと君            </td>
+            <td width="187" height="22">    
+                <p style="line-height:150%; margin-top:0; margin-bottom:0;">
+
+
+
+<input type="radio" name="t" value="5" >みつお君            </td>
+        </tr>
+    </table>
+	<p align="center">&nbsp;
+あなたの今持っているお金は…<INPUT 
+style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 5px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; TEXT-ALIGN: right; BORDER-RIGHT-WIDTH: 0px" 
+readOnly size="10" name=moti>円<p align="center">掛け金は…<input name=kakekin size="10">円</p>
+    <p align="center"><input type="button" onclick="go()" value="いざ勝負！">
+</p>
+</form>
+　　
+<p>var &nbsp;1.00 γ版として一応公開(後悔)</p>
+<p>var　2.00 一応それっぽくなる</p>
+<p>var &nbsp;2.10 みつお君の異常な強さを修正。</p>
+</script>
+<p><strong><a href="http://www.geocities.jp/yaha1915/game.htm">ゲームのホームに戻る！</strong></a></p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+</HTML>
