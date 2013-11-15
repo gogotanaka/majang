@@ -1,0 +1,306 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxuw_rQOTGi-AJs5XCWaKIhU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/PRmiXeptR36kaC0GEAetxsBo4hlZyBvkZICS3KpNonM.woff) format('woff');
+}
+
+
+body {
+  background: none repeat scroll 0 0 #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1em;
+  color: #333333;
+}
+
+a {
+  outline: medium none;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+input, textarea, select {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0 none;
+  padding: 5px;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input, textarea {
+    -moz-transition: background 0.2s linear 0s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+input:focus, textarea:focus {
+    border-color: #993300;
+    box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(235, 82, 82, 0.35);
+    color: #333333;
+    outline: 0 none;
+}
+
+.inside {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* font */
+.serif {
+  font-family: palatino,"palatino linotype","book antiqua",serif;
+}
+.hiragino {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+.lucide {
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+.times_roman {
+  font-family: "Times New Roman",Times,"Ryumin Medium KL","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","メイリオ","ＭＳ Ｐ明朝",serif;
+}
+.GrayColor {
+  color: #8C7E7E;
+}
+
+
+.centered { margin: 0 auto; }
+.text_center { text-align: center; }
+.text_right { text-align: right; }
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0 15px;
+}
+header .logo {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  float: left;
+}
+header .description {
+  font-size: 13px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 11px;
+}
+
+#navbar {
+  margin-bottom: 16px;
+}
+/* Navigation List */
+#nav {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffffff 0%,#f2f2f2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+#nav ul li.nav_li {
+  float: left;
+  width: 120px;
+  position: relative; 
+}
+#nav ul li a { 
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #383838;
+  border: 1px solid #e5e5e5;
+  border-left: none;
+  box-shadow: 1px 0 rgba(255,255,255,0.75);
+}
+#nav ul li:first-child a { 
+  border-left: 1px solid #e5e5e5;
+}
+#nav ul li.current a.drop {
+  color: #fff;
+  background-color: rgb(48,121,0);
+  border: 1px solid rgb(48,121,0);
+}
+#nav ul li a:hover {
+  color: #fff;
+  background-color: #383838;
+  border: 1px solid #383838;
+}
+#nav ul li a.drop:hover, #nav ul li:hover > a.drop {
+  color: #fff;
+  background-color: #383838;
+  border: 1px solid #383838;
+}
+#nav ul li ul {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: none;
+  color: #fff;
+  background-color: #383838;
+  z-index: 100;
+}
+#nav ul li:hover > ul {
+  display: block;
+}
+#nav ul li ul li a {
+  border: none;
+  display: block;
+  width: 210px;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  border-top: 1px solid #4d4d4d;
+  border-bottom: 1px solid #262626;
+  text-align: left;
+  padding-left: 10px;
+}
+#nav ul li:first-child ul li a {
+  background-color: #383838;
+  border-left: none;
+  border-right: none;
+}
+#nav ul li ul li a:hover {
+  background-color: rgb(48,121,0);
+  border: none;
+  border-top: 1px solid rgb(48,121,0);
+  border-bottom: 1px solid rgb(48,121,0);
+}
+#nav ul li ul li:first-child a {
+  background-color: #383838;
+  border: none;
+  border-top: none;
+  border-bottom: 1px solid #262626;
+}
+#nav ul li ul li:first-child a:hover {
+  background-color: rgb(48,121,0);
+  border: none;
+  border-bottom: 1px solid rgb(48,121,0);
+}
+
+#cover {
+  position: relative;
+}
+#cover img {
+  display: block;
+}
+#cover #copy {
+  position: absolute;
+  background-color: rgba(0,0,0,0.75);
+  padding: 35px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  left: 20px;
+  bottom: 20px;
+}
+
+#latest_news {
+  margin: 20px 0;
+  padding: 15px 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  border-left: 5px solid rgb(48,121,0);
+}
+#latest_news_contents {
+  width: 800px;
+  float: left;
+}
+#latest_news_contents h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+#more_news {
+  width: 100px;
+  margin-left: 30px;
+  margin-top: 1px;
+  float: right;
+}
+#more_news a {
+  background-color: rgb(48,121,0);
+  padding: 7px 10px;
+  font-size: 12px;
+  color: #fff;
+}
+#more_news a:hover {
+  background-color: #383838;
+}
